@@ -1,6 +1,6 @@
 ## Overview and Structure
 <p align="justify">
-This repository provides the source codes that enable the user to record svo inside Isaac Sim simulated environments such that your computer vision algorithms can be tested on and eventuallly benchmarked with other SOTA public algorithms.
+This repository provides the source codes that allow you to record svo inside Isaac Sim simulated environments such that your computer vision algorithms can be tested on and eventuallly benchmarked with other SOTA public algorithms.
 </p>
 
 [//]: # (Symbols we can use for folder structure  │  ├  ─  └)
