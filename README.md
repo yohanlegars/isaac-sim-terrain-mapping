@@ -67,7 +67,14 @@ The timestamp data folder (containing svo, tracking, gt mesh) is moved inside `/
 ### mesh_evaluation/
 
 
-Spatial mapping algorithms can be tested on previously recorder svo. The spatial mapping returns an estimated mesh that is then compared with the GT mesh of the corresponding svo. The metrics being used to evaluate the performance of an algorithm are the recall, the precision and the f-score. 
+Spatial mapping algorithms can be tested on previously recorded svo. For instance the ZED SDK spatial mapping feature can tested by running the following command: `python3 mesh_evaluation/spatial_mapping_algo/sdk.4.0/mesheval.py`.
+The running spatial mapping algorithm is being displayed as shown below:
+<p align="center">
+    <img src = "./doc/spatial_mapping.gif" width="600" height="400">
+</p>
+
+
+The spatial mapping returns an estimated mesh that is then compared with the GT mesh of the corresponding svo. The metrics being used to evaluate the performance of an algorithm are the recall, the precision and the f-score. 
 
 <p align="center">
     <img src = "./doc/metrics.png" width="500" height="500">
