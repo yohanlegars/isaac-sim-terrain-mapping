@@ -49,7 +49,7 @@
     type: 0
     position: [0.0, 0.0, 0.0] 
     orientation: [0.0, 0.0, 0.0, 1.0]
-    material: "Soil_Rocky" # this feature is not implemented yet, you have to apply the material manually with the GUI
+    material: "Soil_Rocky" 
     name: "non_uniform_terrain"
     width: 10.0
     length: 10.0
@@ -61,7 +61,7 @@
 #     type: 2
 #     position: [-25, 0.0, 0.0] 
 #     orientation: [0.0, 0.0, 0.0, 1.0]
-#     material: "Soil_Rocky" # this feature is not implemented yet, you have to apply the material manually with the GUI
+#     material: "Soil_Rocky" 
 #     name: "pyramid_stairs_terrains"
 #     width: 30.0
 #     length: 30.0
@@ -74,7 +74,7 @@
 #     position: [-302.5, 0.0, 0.0] 
 #     orientation: [0.0, 0.0, 0.0, 1.0]
 #     scale: [5, 5, -5]
-#     material: "Sand" # this feature is not implemented yet, you have to apply the material manually with the GUI
+#     material: "Sand" 
 #     name: "wave_terrain"
 #     width: 30.0
 #     length: 30.0
