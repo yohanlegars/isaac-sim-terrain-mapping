@@ -1,0 +1,34 @@
+# 1 - change the dir below according to your local machine. 
+# 2 - COPY your path below 
+# 3 - select one "dir" below and enter Ctrl+f, press toggle replace, paste path into the replace field with one indent and Press Ctrl+Alt+Enter
+# 4 - enter you ip address in the corresponding field (-record: ip:)
+
+#dir = /path/to/isaac-sim_terrain_mapping/isaac_dataset_generation
+---
+
+- stage:
+    position: "dir/isaac_dataset_generation/POSITION_cameracontroller.usd"
+    keyboard: "dir/isaac_dataset_generation/KEYBOARD_cameracontroller.usd"
+
+- config:
+    terrain: "dir/isaac_dataset_generation/configs/config.yaml"
+
+- ground_truth:
+    csv: "dir/isaac_dataset_generation/data/position.csv"
+
+- extension:
+    path: "dir/zed-isaac-sim/exts"
+
+
+- converter:
+    csv: "dir/isaac_dataset_generation/data/position.csv"
+    json: "dir/isaac_dataset_generation/data/position.json"
+
+- record:
+    svo: "dir/isaac_dataset_generation/data/svo_isaac.svo"
+    ip: "your_ip"
+    terminal: "gnome-terminal -e './python.sh dir/isaac_dataset_generation/utils/svo_recording.py dir/isaac_dataset_generation/data/svo_isaac.svo'"
+
+- eval:
+    sdk: "dir/mesh_evaluation/test_mesh.obj" 
+    gt: "dir/isaac_dataset_generation/data/scene.obj"
