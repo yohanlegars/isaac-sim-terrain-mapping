@@ -40,7 +40,7 @@ Isaac-sim_terrain-mapping
 
 ```
 
-### isaac_dataset_generation/
+### isaac_dataset_generation
 
 
 The environments, terrains topology and textures, can be defined by the user through a yaml file. A ZED X camera is launched alongside the terrains and can be controlled by the user via keyboard commands.
@@ -64,7 +64,7 @@ The user can save the svo recording by pressing `q` in the other terminal in whi
 The timestamp data folder (containing svo, tracking, gt mesh) is moved inside `/mesh_evaluation/sequences/` and is ready to be processed by the computer vision algorithms.
 
 
-### mesh_evaluation/
+### mesh_evaluation
 
 
 Spatial mapping algorithms can be tested on previously recorded svo. For instance the ZED SDK spatial mapping feature can tested by running the following command: `python3 mesh_evaluation/spatial_mapping_algo/sdk.4.0/mesheval.py`.
