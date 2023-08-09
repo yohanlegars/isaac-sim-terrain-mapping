@@ -1,9 +1,6 @@
-# 1 - change the dir below according to your local machine. 
-# 2 - COPY your path below 
-# 3 - select one "dir" below and enter Ctrl+f, press toggle replace, paste path into the replace field with one indent and Press Ctrl+Alt+Enter
-# 4 - enter you ip address in the corresponding field (-record: ip:)
+Replace dir by the right path
 
-#dir = /path/to/isaac-sim_terrain_mapping/isaac_dataset_generation
+#dir = /path/to/isaac-sim_terrain_mapping/
 ---
 
 - stage:
@@ -28,7 +25,10 @@
     svo: "dir/isaac_dataset_generation/data/svo_isaac.svo"
     ip: "your_ip"
     terminal: "gnome-terminal -e './python.sh dir/isaac_dataset_generation/utils/svo_recording.py dir/isaac_dataset_generation/data/svo_isaac.svo'"
-
+    
+- pwd:
+    data_before: "dir/isaac_dataset_generation/"
+    data_after: "dir/mesh_evaluation/sequences/"
 - eval:
     sdk: "dir/mesh_evaluation/test_mesh.obj" 
     gt: "dir/isaac_dataset_generation/data/scene.obj"

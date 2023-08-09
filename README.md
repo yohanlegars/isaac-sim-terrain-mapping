@@ -99,7 +99,7 @@ In order to be able to run the source codes that compose this repository, you ne
 * <a href="https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_workstation.html"> Isaac Sim 2022.2.1 </a>
 * ZED SDK 4.0
 * more than 16Gb of RAM
-
+* you must contact the author to have access to a exts file that will allow you to stream the camera's odometry.
 
 If you want a smooth experience using Isaac Sim, I recommend to follow this <a href="https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/requirements.html#driver-requirements"> link </a> and see if your machine possesses the minimum requirements.
 
