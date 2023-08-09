@@ -1,4 +1,7 @@
 ## Overview and Structure
+<p align="center">
+    <img src = "./doc/stereolabs.png">
+</p>
 <p align="justify">
 This repository provides the source codes that allow you to record svo inside Isaac Sim simulated environments such that your computer vision algorithms can be tested on and eventuallly benchmarked with other SOTA public algorithms.
 </p>
@@ -39,6 +42,13 @@ Isaac-sim_terrain-mapping
 
 
 ```
+
+<p align="center">
+    <img src = "./doc/move_around.gif" width="600" height="400">
+    <img src = "./doc/move_straight.gif" width="600" height="400">
+</p>
+
+
 
 ### isaac_dataset_generation
 
