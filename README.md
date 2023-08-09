@@ -15,6 +15,7 @@ Isaac-sim_terrain-mapping
  │ 
  ├─── README.md          
  ├─── parser.yaml
+ ├─── exts/
  │
  ├─── isaac_dataset_generation/
  │     ├─── background/
