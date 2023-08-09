@@ -1,0 +1,89 @@
+---
+# Determine how many terrain you want to generate
+
+- num_of_terrains: 2
+
+
+# Choose the type of terrain from the following list.
+
+# random_uniform_terrain = 0
+# stepping_stones_terrain = 1
+# pyramid_stairs_terrain = 2
+# pyramid_sloped_terrain = 3
+# discrete_obstacles_terrain = 4 
+# wave_terrain = 5 
+# stairs_terrain = 6 
+# sloped_terrain = 7
+# flat_terrain = 8
+
+# Chosse the type of material from the following list:
+# grass
+# rock
+# ...
+
+###Structure###
+
+# - terrain1:
+
+#     type: 2
+#     position: [0.0, 0.0, 0.0] 
+#     orientation: [0.0, 0.0, 0.0, 1.0]
+#     name: "wave_terrain"
+    
+
+# - terrain2:
+
+#     type: 2
+#     position: [10.0, 0.0, 0.0] 
+#     orientation: [0.0, 0.0, 0.0, 1.0]
+#     scale: [1.0, 1.0, 1.0]
+#     material: "grass"  
+#     name: "pyramid_stairs_terrain"
+    
+# - terrain3:
+
+#    ... 
+
+- terrain1:
+
+    type: 2
+    position: [0.0, 0.0, 0.0] 
+    orientation: [0.0, 0.0, 0.0, 1.0]
+    material: "Soil_Rocky" # this feature is not implemented yet, you have to apply the material manually with the GUI
+    name: "non_uniform_terrain"
+    width: 30.0
+    length: 30.0
+    scale: [5, 5, 5]
+
+
+- terrain2:
+
+    type: 3
+    position: [-151.25, 0.0, 0.0] 
+    orientation: [0.0, 0.0, 0.0, 1.0]
+    material: "Soil_Rocky" # this feature is not implemented yet, you have to apply the material manually with the GUI
+    name: "non_uniform_terrain"
+    width: 30.0
+    length: 30.0
+    scale: [5, 5, 5]
+
+
+# - terrain3:
+ 
+#     type: 5
+#     position: [-302.5, 0.0, 0.0] 
+#     orientation: [0.0, 0.0, 0.0, 1.0]
+#     scale: [5, 5, -5]
+#     material: "Sand" # this feature is not implemented yet, you have to apply the material manually with the GUI
+#     name: "wave_terrain"
+#     width: 30.0
+#     length: 30.0
+#     scale: [5, 5, -5]
+
+# #
+
+- controller: "position" # or position
+
+# - trajectory:
+
+#     type: 'straight_line'

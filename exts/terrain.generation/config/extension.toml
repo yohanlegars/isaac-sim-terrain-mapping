@@ -6,8 +6,8 @@ version = "1.0.0"
 authors = ["Stereolabs"]
 
 # The title and description fields are primarily for displaying extension info in UI
-title = "ZED Camera Extension"
-description="The ZED Camera extension streams the ZED camera data to the ZED SDK. "
+title = "Terrarin generation"
+description="The terrain generation is an extension meant to generate a ground environment containing several elevations, thus enabling quick testing of the sdk's elevation map."
 
 # Path (relative to the root) or content of readme markdown file for UI.
 readme  = "docs/README.md"
@@ -16,10 +16,10 @@ readme  = "docs/README.md"
 repository = ""
 
 # One of categories for UI.
-category = "Sensors"
+category = "Example"
 
 # Keywords for the extension
-keywords = ["kit", "sensor", "camera", "stereo", "zed"]
+keywords = ["kit", "example"]
 
 # Location of change log file in target (final) folder of extension, relative to the root.
 # More info on writing changelog: https://keepachangelog.com/en/1.0.0/
@@ -36,12 +36,9 @@ icon = "data/icon.png"
 [dependencies]
 "omni.kit.uiapp" = {}
 
-# Main python module this extension provides, it will be publicly available as "import sl.camera".
+# Main python module this extension provides, it will be publicly available as "import sl.zedbot.playground".
 [[python.module]]
-name = "sl.sensor.camera"
-
-[[native.library]]
-path = "bin/libsl_isaac_sim_streamer.so"
+name = "terrain.generation"
 
 [[test]]
 # Extra dependencies only to be used during test run
